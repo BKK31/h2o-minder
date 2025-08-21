@@ -10,9 +10,11 @@
     <h1>Welcome to Water Intake Calculator</h1>
     <p>This uses Basal Metabolic Rate (BMR) of a person in order to calculate the daily water intake requrired</p><br>
     <h2>Please fill out the followin details</h2>
-    <form action="">
-        <label for="gender">Select your gender</label>
-        <input type="radio" name="gender" id="male"> Male &nbsp; <input type="radio" name="gender" id="female">Female<br>
+    <form id="form" action="">
+        <label for="age">Enter your age</label>
+        <input type="number" name="age" id="age"><br>
+        <label for="gender" id="gender">Select your gender</label>
+        <input type="radio" name="gender" id="male" value="male"> Male &nbsp; <input type="radio" name="gender" id="female" value="female">Female<br>
         <label for="weight">Enter you weight (in kg)</label>
         <input type="number" name="weight" id="weight"><br>
         <label for="height">Enter you height (in cms)</label>
@@ -28,6 +30,7 @@
         </select><br>
         <button id="submit">Submit</button>&nbsp;<input type="reset" value="Reset">
     </form>
+    <h2 id="water-intake"></h2>
     <script src="app.js"></script>
 </body>
 </html>
