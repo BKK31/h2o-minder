@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Intake Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Water Intake Calculator</h1>
+    <p>This uses Basal Metabolic Rate (BMR) of a person in order to calculate the daily water intake requrired</p><br>
+    <h2>Please fill out the followin details</h2>
+    <form action="">
+        <label for="gender">Select your gender</label>
+        <input type="radio" name="gender" id="male"> Male &nbsp; <input type="radio" name="gender" id="female">Female<br>
+        <label for="weight">Enter you weight (in kg)</label>
+        <input type="number" name="weight" id="weight"><br>
+        <label for="height">Enter you height (in cms)</label>
+        <input type="number" name="height" id="height"><br>
+        <label for="activity">Select your activity level</label>
+        <select name="activity" id="activity">
+            <option value="0" selected>Select</option>
+            <option value="1">Sedentary (little to no exercise)</option>
+            <option value="2">Lightly Active (exercise 1-3 days/week)</option>
+            <option value="3">Moderately Active (exercise 3-5 days/week)</option>
+            <option value="4">Very Active (exercise 6-7 days/week)</option>
+            <option value="5">Extremely Active (very intense exercise or physical job)</option>
+        </select><br>
+        <button id="submit">Submit</button>&nbsp;<input type="reset" value="Reset">
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
